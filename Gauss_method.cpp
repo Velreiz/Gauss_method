@@ -42,7 +42,7 @@ int main() {
     double x[MAX_SIZE];
 
     ifstream inputFile("input.txt");
-    inputFile >> n;
+    inputFile >> n; // оператор >> считывает данные из файла до тех пор, пока не встретит пробел, табуляцию или перевод строки.
 
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
