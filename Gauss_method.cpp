@@ -56,7 +56,13 @@ int main() {
 
     inputFile.close();
 
+    cout << "Initial matrix:" << endl;
+    printMatrix(n, A);
+
     gaussElimination(n, A, b, x);
+
+    cout << "Final matrix:" << endl;
+    printMatrix(n, A);
 
     ofstream outputFile("output.txt");
 
